@@ -45,7 +45,7 @@
         return (file) => {
           const filePath = file.path;
           const fileName = filePath.replace('.mid', '').toLowerCase().replace(/-/g, '');
-          const isMarkdown = (/.md$/).test(filePath);
+          const isMarkdown = (/.mid$/).test(filePath);
           const isNotLicense = filePath !== 'LICENSE.md';
           const isInFilter = filter.split(' ')
             .every((token) => fileName.indexOf(token.toLowerCase()) !== -1)
