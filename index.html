@@ -1,7 +1,18 @@
 <!doctype html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#ff473e">
     <title>maes fishtunez</title>
+    <meta property="og:title" content="maes fishtunez">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="maes fishtunez">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
+
     <style>
       body {
         overflow-y: scroll;
@@ -50,13 +61,13 @@
     
     <script>
       (async () => {
-        const responseA = await fetch('https://api.github.com/repos/syvvieon/maes-fishtunez/contents/site');
+        const responseA = await fetch('https://api.github.com/repos/syvvieon/maes-fishtunez/contents/custom');
         const dataA = await responseA.json();
 
-        const responseB = await fetch('https://api.github.com/repos/syvvieon/maes-fishtunez/contents/site');
+        const responseB = await fetch('https://api.github.com/repos/syvvieon/maes-fishtunez/contents/edit');
         const dataB = await responseB.json();
 
-        const responseC = await fetch('https://api.github.com/repos/syvvieon/maes-fishtunez/contents/site');
+        const responseC = await fetch('https://api.github.com/repos/syvvieon/maes-fishtunez/contents/rip');
         const dataC = await responseC.json();
         
         let htmlStringA = '';
