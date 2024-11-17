@@ -74,9 +74,9 @@
           htmlStringC += `<li><a href="${fileC.path}">${fileC.name}</a></li>`;
         }
         
-        document.getElementByID('listA').innerHTML = htmlStringA;
-        document.getElementByID('listB').innerHTML = htmlStringB;
-        document.getElementByID('listC').innerHTML = htmlStringC;
+        document.getElementById('listA').innerHTML = htmlStringA;
+        document.getElementById('listB').innerHTML = htmlStringB;
+        document.getElementById('listC').innerHTML = htmlStringC;
       
       })()
     </script>
