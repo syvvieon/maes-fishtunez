@@ -24,6 +24,7 @@
       }
     </style>
   </head>
+  
   <body>
     <div class="container-lg px-3 my-5 markdown-body">
       <h1>
@@ -63,15 +64,15 @@
         let htmlStringC = '';
           
         for (let file of dataA) {
-          htmlStringA += `<li><a href="${fileA.path}">${fileA.name}</a></li>`;
+          htmlStringA += `<li><a href="${file.path}">${file.name}</a></li>`;
         }
   
         for (let file of dataB) {
-          htmlStringB += `<li><a href="${fileB.path}">${fileB.name}</a></li>`;
+          htmlStringB += `<li><a href="${file.path}">${file.name}</a></li>`;
         }
   
         for (let file of dataC) {
-          htmlStringC += `<li><a href="${fileC.path}">${fileC.name}</a></li>`;
+          htmlStringC += `<li><a href="${file.path}">${file.name}</a></li>`;
         }
         
         document.getElementById('listA').innerHTML = htmlStringA;
