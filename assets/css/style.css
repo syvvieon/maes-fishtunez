@@ -4,6 +4,6 @@ body {
 	color: rgb(243, 167, 211); /* Change my color to yellow */
 	margin: 0;
 	height: 100vh;
-	display: flex;
+	display: block;
 	font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
 }
