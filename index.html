@@ -58,25 +58,21 @@
         const responseC = await fetch('https://api.github.com/repos/syvvieon/maes-fishtunez/contents/site');
         const dataC = await responseC.json();
         
-        let htmlStringA = '<ul>';
-        let htmlStringB = '<ul>';
-        let htmlStringC = '<ul>';
+        let htmlStringA = '';
+        let htmlStringB = '';
+        let htmlStringC = '';
           
-        for (let fileA = dataA.file) {
+        for (let file of dataA) {
           htmlStringA += `<li><a href="${fileA.path}">${fileA.name}</a></li>`;
         }
   
-        for (let fileB = dataB.file) {
+        for (let file of dataB) {
           htmlStringB += `<li><a href="${fileB.path}">${fileB.name}</a></li>`;
         }
   
-        for (let fileC = dataC.file) {
+        for (let file of dataC) {
           htmlStringC += `<li><a href="${fileC.path}">${fileC.name}</a></li>`;
         }
-        
-        htmlStringA += '</ul>';
-        htmlStringB += '</ul>';
-        htmlStringC += '</ul>';
         
         document.getElementByID('listA').innerHTML = htmlStringA;
         document.getElementByID('listB').innerHTML = htmlStringB;
