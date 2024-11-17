@@ -1,9 +1,18 @@
 body {
-	background: #220117;
+	background: #220118;
 	padding: 0 24px;
-	color: rgb(243, 167, 211); /* Change my color to yellow */
+	color: white; /* Change my color to yellow */
 	margin: 0;
 	height: 100vh;
 	display: block;
 	font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+}
+
+a:link {
+  color: #ff00b3;
+}
+
+/* visited link */
+a:visited {
+  color: #82005b;
 }
