@@ -3,7 +3,7 @@
 
 <head>
 
-  <title>"Mae's Fishtunez"</title>
+  <title>Mae's Fishtunez</title>
 
   <link rel="icon" type="image/x-icon" href="https://geolytix.github.io/xyz/public/icons/favicon.ico" />
 
@@ -54,9 +54,9 @@
 
   window.onload = async () => {
 
-    const pathname = window.location.pathname.replace(/\/MapIcons/, '');
+    const pathname = window.location.pathname.replace(/\/maes-fishtunez/, '');
 
-    const response = await fetch(`https://api.github.com/repos/geolytix/mapicons/contents${pathname}`)
+    const response = await fetch(`https://api.github.com/repos/syvvieon/maes-fishtunez/contents${pathname}`)
 
     const results = await response.json()
 
@@ -65,13 +65,13 @@
       ${results.filter(el => el.type === 'dir').map(el => html`
       <a
         class="directory"
-        href="${`https://geolytix.github.io/MapIcons${pathname}${el.name}`}">${el.name}`)}
+        href="${`https://syvvieon.github.io/maes-fishtunez${pathname}${el.name}`}">${el.name}`)}
     </div>
     <div class="gallery">
       ${results.filter(el => el.name.match(/\.(gif|jpe?g|tiff?|png|webp|bmp|svg)$/i)).map(el => html`
         <a
           class="img"
-          href="${`https://geolytix.github.io/MapIcons${pathname}${el.name}`}"
+          href="${`https://syvvieon.github.io/maes-fishtunez${pathname}${el.name}`}"
           style="${`background-image: url(https://geolytix.github.io/MapIcons${pathname}${el.name})`}">`)}`)
   
 
