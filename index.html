@@ -28,15 +28,11 @@
     <div class="container-lg px-3 my-5 markdown-body">
       <h1>
         <a href="./">sylvia-mae's webfishing midi database</a>
-        <form id="search_form" autocomplete="off">
-          <input id="search_input">
-        </form>
       </h1>
+      <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
       <ul id="list">
       </ul>
     </div>
-    
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
     
     <script>
       (async () => {
@@ -49,7 +45,7 @@
         }
   
         htmlString += '</ul>';
-        document.getElementsByTagName('body')[0].innerHTML = htmlString;
+        document.getElementsByTagName('list')[0].innerHTML = htmlString;
       })()
     </script>
   </body>
